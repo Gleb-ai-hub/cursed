@@ -11,16 +11,17 @@ window.onclick = (event) => {
   }
 };
 async function send() {
-  const msg = document.getElementById("msg").value;
+  const input = document.getElementById("input").value;
 
-  const res = await fetch("https://cursed-6ea8.onrender.com/api/chat"), {
+  const res = await fetch("https://cursed-6ea8.onrender.com/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({ message: msg })
+    body: JSON.stringify({ message: input })
   });
 
   const data = await res.json();
-  alert(data.reply);
+
+  console.log(data);
 }
