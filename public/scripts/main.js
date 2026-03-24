@@ -13,7 +13,7 @@ window.onclick = (event) => {
 async function send() {
   const msg = document.getElementById("msg").value;
 
-  const res = await fetch("https://your-app.onrender.com/api/chat", {
+  const res = await fetch("https://cursed-6ea8.onrender.com/api/chat"), {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
