@@ -11,7 +11,7 @@ window.onclick = (event) => {
   }
 };
 async function send() {
-  const input = document.getElementById("input").value;
+  const input = document.getElementById("msg").value;
 
   const res = await fetch("https://cursed-6ea8.onrender.com/api/chat", {
     method: "POST",
