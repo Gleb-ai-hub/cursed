@@ -92,7 +92,7 @@ button:hover {
     border-radius: 20px;
     transition: transform 0.4s ease;
     margin-top: auto;
-    width: 255px;
+    width: 257px;
 }
 .msg {
     border-radius: 10px;
@@ -151,12 +151,12 @@ button:hover {
     position: absolute;
     left: 43.7%;
     top: 50%;
-    transform: translate(-44% -50%);
+    transform: translate(-44%, -50%);
 
     display: flex;
     flex-direction:column;
 
-    width: 255px;
+    width: 257px;
     height: 40px;
 
     overflow: hidden;
