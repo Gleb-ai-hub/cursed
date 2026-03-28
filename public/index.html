@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="follow, index">
-    <meta name="googlebot" content="max-image-preview:[standard]">
+    <meta name="googlebot" content="max-image-preview:standard">
     <meta name="author" content="Глеб Желнов"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website">
@@ -27,8 +27,22 @@
             <div class="l-text-head"><img class="logo" src="./img/images.jpg" alt="logo">
             </div>
             <nav class="r-text-head">
+                <div class="ai-wrapper" id="aiWrapper">
+
+                    <div class="ai-chat" id="aiChat">
+                        <div class="chat-messages" id="chatMessages"></div>
+                      </div>
+
+                  <div class="ai" id="aiBox">
+                    <input class="msg" id="msg" placeholder="Спросить у ИИ">
+                    <button onclick="send()" class="ai-send"  aria-label="отправить">↵</button>
+                    <button onclick="aiOpen()" class="ai-open" id="aiOpen"  aria-label="открыть меню с ии">⇩</button>
+                  </div>
+
+                </div>
+                
                 <div class="dropdown">
-                  <button class="contacts" id="contacts" aria-label="открыть контакты">
+                    <button class="contacts" id="contacts" aria-label="открыть контакты">
                     <span class="contacts-text">мои контакты ></span>
                 </button>
                     <div id="menuList" class="menu-content">
@@ -42,13 +56,6 @@
     </header>
     <main></main>
     <footer></footer>
-
-
-
-
-    <input id="msg">
-<button onclick="send()">Отправить</button>
-
-<script src="main.js"></script>
 </body>
+<script src="./scripts/main.js"></script>
 </html>
